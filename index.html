@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportBlouse - Baju Olahraga Premium untuk Wanita Indonesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6D28D9',
+                        secondary: '#F43F5E',
+                        dark: '#1F2937',
+                        light: '#F9FAFB',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #6D28D9 0%, #F43F5E 100%);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .scroll-down {
+            animation: scrollDown 1.5s infinite;
+        }
+        
+        @keyframes scrollDown {
+            0% { transform: translateY(0); opacity: 0.4; }
+            50% { transform: translateY(10px); opacity: 1; }
+            100% { transform: translateY(0); opacity: 0.4; }
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Sticky Price Banner -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white shadow-lg z-50 py-3 px-4 border-t-2 border-primary">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-2 md:mb-0">
+                <div class="text-center md:text-left">
+                    <p class="text-sm text-gray-600">Harga Normal:</p>
+                    <p class="text-lg font-bold text-dark line-through">Rp 262.500</p>
+                </div>
+                <div class="ml-4 text-center md:text-left">
+                    <p class="text-sm text-gray-600">Harga Promo:</p>
+                    <p class="text-2xl font-bold text-secondary">Rp 175.000</p>
+                </div>
+            </div>
+            <a href="https://tara.orderonline.id/sportblouse" class="bg-primary hover:bg-purple-800 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg pulse w-full md:w-auto text-center">
+                <i class="fas fa-shopping-cart mr-2"></i> PESAN SEKARANG
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-primary">SportBlouse</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#features" class="text-dark hover:text-primary font-medium">Fitur</a>
+                <a href="#testimonials" class="text-dark hover:text-primary font-medium">Testimoni</a>
+                <a href="#benefits" class="text-dark hover:text-primary font-medium">Manfaat</a>
+                <a href="#order" class="text-dark hover:text-primary font-medium">Pesan</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-dark focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#features" class="block py-2 text-dark hover:text-primary">Fitur</a>
+            <a href="#testimonials" class="block py-2 text-dark hover:text-primary">Testimoni</a>
+            <a href="#benefits" class="block py-2 text-dark hover:text-primary">Manfaat</a>
+            <a href="#order" class="block py-2 text-dark hover:text-primary">Pesan</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-16 pb-20 md:pb-32">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Tampil Sporty dan Tetap Modis Saat Berolahraga!</h1>
+                <p class="text-xl mb-8">Kaos sport wanita dari Women Sportwear ini dirancang khusus untuk kamu yang aktif, energik, dan peduli penampilan, baik di gym, saat yoga, maupun senam.</p>
+                
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://tara.orderonline.id/sportblouse" class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg text-center">
+                        <i class="fas fa-shopping-cart mr-2"></i> PESAN SEKARANG
+                    </a>
+                    <a href="#features" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 text-center">
+                        <i class="fas fa-info-circle mr-2"></i> LIHAT DETAIL
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex items-center">
+                    <div class="flex -space-x-2">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Customer">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Customer">
+                        <img src="https://randomuser.me/api/portraits/women/3.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Customer">
+                    </div>
+                    <div class="ml-4">
+                        <p class="font-medium">+<span id="happy-customers">1250</span> wanita Indonesia sudah memakai SportBlouse</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <img src="https://cdn.orderonline.id/uploads/images_1741321750644896490.jpg" alt="SportBlouse" class="rounded-lg shadow-2xl floating w-full max-w-md">
+                    <div class="absolute -bottom-6 -right-6 bg-white text-dark p-4 rounded-lg shadow-lg">
+                        <div class="text-center">
+                            <p class="text-sm">Stok Tersisa:</p>
+                            <p class="text-xl font-bold text-secondary"><span id="remaining-stock">57</span> pcs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-16 md:mt-24 animate-bounce">
+            <a href="#features" class="text-white scroll-down">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Kenapa Memilih SportBlouse?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Desain premium dengan bahan berkualitas tinggi untuk kenyamanan maksimal saat berolahraga</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-light p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-wind text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Bahan Breathable</h3>
+                    <p class="text-gray-600">Bahan khusus yang menyerap keringat dengan cepat dan membuat kulit tetap bernapas</p>
+                </div>
+                
+                <div class="bg-light p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-tshirt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Desain Stylish</h3>
+                    <p class="text-gray-600">Potongan yang modis dan cocok untuk berbagai bentuk tubuh wanita Indonesia</p>
+                </div>
+                
+                <div class="bg-light p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Nyaman Dipakai</h3>
+                    <p class="text-gray-600">Lembut di kulit dan tidak menyebabkan iritasi bahkan untuk pemakaian lama</p>
+                </div>
+                
+                <div class="bg-light p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 text-center">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bolt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-2">Fleksibel</h3>
+                    <p class="text-gray-600">Mengikuti gerakan tubuh dengan sempurna untuk berbagai jenis olahraga</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Tampil Percaya Diri dengan SportBlouse</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Lihat bagaimana SportBlouse meningkatkan penampilan olahraga Anda</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="https://cdn.orderonline.id/uploads/images_3723841750644898506.jpg" alt="SportBlouse Gallery" class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-all duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="https://down-id.img.susercontent.com/file/f49126b91e75801634f245e16c202832.webp" alt="SportBlouse Gallery" class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-all duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="https://images.tokopedia.net/img/cache/900/aphluv/1997/1/1/74c646e64c5e4deb972ef97157aba8dd~.jpeg" alt="SportBlouse Gallery" class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-all duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="https://ae01.alicdn.com/kf/S89569a8e021f406babf5a41413654ec4M.jpg" alt="SportBlouse Gallery" class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-all duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <img src="https://ae01.alicdn.com/kf/Sec090c733e00468a9f9650bdb921fa8ea.jpg" alt="SportBlouse Gallery" class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-all duration-500">
+                </div>
+                <div class="bg-primary rounded-xl shadow-lg flex items-center justify-center p-8">
+                    <div class="text-center text-white">
+                        <h3 class="text-2xl font-bold mb-4">Siap Bergaya dengan SportBlouse?</h3>
+                        <a href="https://tara.orderonline.id/sportblouse" class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-6 rounded-full inline-block transition-all duration-300 transform hover:scale-105">
+                            <i class="fas fa-shopping-cart mr-2"></i> PESAN SEKARANG
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Manfaat SportBlouse untuk Anda</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Temukan pengalaman berolahraga yang lebih menyenangkan</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <div class="space-y-8">
+                        <div class="flex">
+                            <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-check-circle text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-dark mb-2">Meningkatkan Performa</h3>
+                                <p class="text-gray-600">Dengan bahan yang nyaman, Anda bisa fokus pada olahraga tanpa gangguan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-check-circle text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-dark mb-2">Mencegah Bau Badan</h3>
+                                <p class="text-gray-600">Bahan antibakteri membantu mengurangi bau tidak sedap saat berkeringat</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-check-circle text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-dark mb-2">Tahan Lama</h3>
+                                <p class="text-gray-600">Kualitas bahan premium membuat SportBlouse tidak mudah melar atau rusak</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="bg-primary bg-opacity-10 w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-check-circle text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-dark mb-2">Multi Fungsi</h3>
+                                <p class="text-gray-600">Cocok untuk gym, yoga, senam, atau bahkan sebagai pakaian sehari-hari</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg">
+                        <img src="https://down-id.img.susercontent.com/file/f49126b91e75801634f245e16c202832.webp" alt="SportBlouse Benefits" class="w-full rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Apa Kata Mereka Tentang SportBlouse?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Testimoni nyata dari pelanggan kami</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" class="w-12 h-12 rounded-full mr-4" alt="Testimoni">
+                        <div>
+                            <h4 class="font-bold text-dark">Dewi Lestari</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Sangat nyaman dipakai untuk yoga. Bahan tidak panas dan menyerap keringat dengan baik. Desainnya juga modis!"</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-12 h-12 rounded-full mr-4" alt="Testimoni">
+                        <div>
+                            <h4 class="font-bold text-dark">Siti Rahayu</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Sudah beli 3 warna berbeda karena memang kualitasnya bagus. Tidak mudah melar meski sering dicuci."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/28.jpg" class="w-12 h-12 rounded-full mr-4" alt="Testimoni">
+                        <div>
+                            <h4 class="font-bold text-dark">Rina Wijaya</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Pas banget untuk tubuh wanita Indonesia. Tidak terlalu ketat tapi tetap terlihat stylish saat dipakai gym."</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" class="w-12 h-12 rounded-full mr-4" alt="Testimoni">
+                        <div>
+                            <h4 class="font-bold text-dark">Maya Susanti</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Sebagai instruktur senam, SportBlouse menjadi pilihan utama saya karena fleksibilitas geraknya sangat baik."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Promo Spesial Berakhir Dalam:</h2>
+            
+            <div class="flex justify-center space-x-4 mb-10">
+                <div class="bg-white text-dark rounded-lg p-4 w-20 md:w-24">
+                    <div class="text-2xl md:text-3xl font-bold" id="countdown-days">00</div>
+                    <div class="text-sm">Hari</div>
+                </div>
+                <div class="bg-white text-dark rounded-lg p-4 w-20 md:w-24">
+                    <div class="text-2xl md:text-3xl font-bold" id="countdown-hours">00</div>
+                    <div class="text-sm">Jam</div>
+                </div>
+                <div class="bg-white text-dark rounded-lg p-4 w-20 md:w-24">
+                    <div class="text-2xl md:text-3xl font-bold" id="countdown-minutes">00</div>
+                    <div class="text-sm">Menit</div>
+                </div>
+                <div class="bg-white text-dark rounded-lg p-4 w-20 md:w-24">
+                    <div class="text-2xl md:text-3xl font-bold" id="countdown-seconds">00</div>
+                    <div class="text-sm">Detik</div>
+                </div>
+            </div>
+            
+            <p class="text-xl mb-8">Dapatkan diskon 33% sebelum promo berakhir!</p>
+            <a href="https://tara.orderonline.id/sportblouse" class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded-full inline-block transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <i class="fas fa-shopping-cart mr-2"></i> PESAN SEKARANG - Rp 175.000
+            </a>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-gradient-to-r from-primary to-secondary rounded-xl shadow-xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12 text-white">
+                        <h2 class="text-3xl font-bold mb-4">Siap Bergaya dengan SportBlouse?</h2>
+                        <p class="mb-6">Jangan lewatkan kesempatan memiliki baju olahraga premium dengan harga spesial ini.</p>
+                        
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-2"></i> Bahan premium breathable
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-2"></i> Desain stylish dan modern
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-2"></i> Nyaman untuk berbagai olahraga
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check-circle mr-2"></i> Tersedia berbagai warna
+                            </li>
+                        </ul>
+                        
+                        <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                            <p class="font-bold mb-2">Harga Normal: <span class="line-through">Rp 262.500</span></p>
+                            <p class="text-2xl font-bold">Harga Promo: Rp 175.000</p>
+                            <p class="text-sm mt-2">*Harga promo berlaku terbatas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 bg-white p-8 md:p-12">
+                        <h3 class="text-2xl font-bold text-dark mb-6">Pesan Sekarang</h3>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-center bg-gray-100 p-3 rounded-lg mb-3">
+                                <div class="bg-primary bg-opacity-10 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-truck text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-dark">Gratis Ongkir</p>
+                                    <p class="text-sm text-gray-600">Untuk seluruh Indonesia*</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center bg-gray-100 p-3 rounded-lg">
+                                <div class="bg-primary bg-opacity-10 w-10 h-10 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-shield-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <p class="font-bold text-dark">Garansi 100%</p>
+                                    <p class="text-sm text-gray-600">Uang kembali jika tidak puas</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="https://tara.orderonline.id/sportblouse" class="block w-full bg-primary hover:bg-purple-800 text-white font-bold py-3 px-6 rounded-full text-center transition-all duration-300 transform hover:scale-105 mb-4">
+                            <i class="fas fa-shopping-cart mr-2"></i> BELI SEKARANG
+                        </a>
+                        
+                        <div class="text-center">
+                            <img src="https://cdn.orderonline.id/uploads/images_1741321750644896490.jpg" alt="Payment Methods" class="h-8 mx-auto mb-4">
+                            <p class="text-sm text-gray-600">Pembayaran aman melalui berbagai metode pembayaran</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">SportBlouse</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-primary text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-primary text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white hover:text-primary text-xl"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                </div>
+                
+                <div>
+                </div>
+                
+                <div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 SportBlouse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/6281234567890" class="fixed bottom-24 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Countdown Timer (3 days from now)
+        const countdown = () => {
+            const now = new Date();
+            const endDate = new Date(now.getTime() + 3 * 24 * 60 * 60 * 1000); // 3 days from now
+            
+            const updateCountdown = () => {
+                const currentDate = new Date();
+                const diff = endDate - currentDate;
+                
+                if (diff <= 0) {
+                    clearInterval(timer);
+                    return;
+                }
+                
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+                
+                document.getElementById('countdown-days').textContent = days.toString().padStart(2, '0');
+                document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+                document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+                document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+            };
+            
+            updateCountdown();
+            const timer = setInterval(updateCountdown, 1000);
+        };
+        
+        // Random Customer Counter
+        const customerCounter = () => {
+            let count = 1250;
+            const target = count + Math.floor(Math.random() * 100);
+            const element = document.getElementById('happy-customers');
+            
+            const timer = setInterval(() => {
+                if (count >= target) {
+                    clearInterval(timer);
+                    return;
+                }
+                count++;
+                element.textContent = count;
+            }, 50);
+        };
+        
+        // Random Stock Counter
+        const stockCounter = () => {
+            let stock = 57;
+            const element = document.getElementById('remaining-stock');
+            
+            const timer = setInterval(() => {
+                if (stock <= 0) {
+                    clearInterval(timer);
+                    return;
+                }
+                stock--;
+                element.textContent = stock;
+                
+                if (stock <= 10) {
+                    element.classList.add('animate-pulse');
+                    element.classList.add('text-red-500');
+                }
+            }, 60000); // Decrease stock every minute
+        };
+        
+        // Initialize all functions
+        document.addEventListener('DOMContentLoaded', () => {
+            countdown();
+            customerCounter();
+            stockCounter();
+        });
+    </script>
+</body>
+</html>
